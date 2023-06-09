@@ -4,42 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+
     <link rel="icon" href="images/icono.png" type="image/png">
     <title>Blockbuster</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="pages/catalogo.html">Catálogo</a></li>
-            <li><a href="pages/carrito.html">Carrito de compras</a></li>
-            <li><a href="pages/estadisticas.html">Estadísticas</a></li>
-            <li><a href="pages/sobre-nosotros.html">Sobre nosotros</a></li>
-            <li><a href=#contacto>Contacto</a></li>
-            <li><a href="pages/administracion.html">Administración</a></li>
+    <nav class="menu">
+        <img src="images/logo.png" alt="">
+        <ul class="menu-lista">
+            <li class="menu-item"><a href="index.html">Inicio</a></li>
+            <li class="menu-item"><a href="pages/catalogo.html">Catálogo</a></li>
+            <li class="menu-item"><a href="pages/carrito.html">Carrito de compras</a></li>
+            <li class="menu-item"><a href="pages/estadisticas.html">Estadísticas</a></li>
+            <li class="menu-item"><a href="pages/sobre-nosotros.html">Sobre nosotros</a></li>
+            <li class="menu-item"><a href=#contacto>Contacto</a></li>
+            <li class="menu-item"><a href="pages/administracion.html">Administración</a></li>
         </ul>
     </nav>
     <main>
         <h1>
-            <span>Blockbuster</span>
-            <!--<img src="images/logo.png" alt="" width="75">-->
+            <div class="titulo-container">
+                <span>BLOCKBUSTER</span>
+                <img src="images/tienda.jpg" alt="">
+            </div>
         </h1>
-        <img src="images/tienda.jpg" alt="" width="620">
-        <sectio>
-            <h2>La última novedad</h2>
-        </sectio>
-        <sectio>
-            <h2>La más buscada</h2>
-        </sectio>
-        <sectio>
-            <h2>La última adquisición</h2>
-        </sectio>
+        <section class="bienvenida">
+            <p>¡Bienvenido a nuestra página de películas Blockbuster!</p>
+            <p>Sumérgete en el mundo del cine y descubre una amplia selección de películas de diferentes géneros. Desde emocionantes películas de acción hasta conmovedores dramas y cautivadoras historias de ciencia ficción, nuestro catálogo tiene algo para todos los amantes del cine.</p>
+            <p>Explora nuestra colección de películas, consulta las sinopsis, revisa las calificaciones y elige tus favoritas. Añádelas a tu carrito y disfruta de una experiencia cinematográfica inigualable desde la comodidad de tu hogar.</p>
+            <p>Además, ofrecemos un excelente servicio de soporte para resolver cualquier consulta o inconveniente que puedas tener. Nuestro equipo está listo para ayudarte en todo momento y asegurarse de que disfrutes al máximo de nuestra plataforma.</p>
+            <p>No olvides revisar nuestras estadísticas para conocer las películas más populares y las recomendaciones de nuestros usuarios. Además, puedes crear una cuenta personalizada para acceder a funciones adicionales, como guardar tus películas favoritas y recibir actualizaciones exclusivas.</p>
+            <p>¡Prepárate para sumergirte en el apasionante mundo del cine con Blockbuster!</p>
+        </section>
+        <section class="destacado">
+            <div class="card" style="width: 18rem;">
+                <h2>La última novedad</h2>
+                <img class="card-img-top" src="images/tienda.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <h2>La más buscada</h2>
+                <img class="card-img-top" src="images/logo.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <h2>La última adiquisición</h2>
+                <img class="card-img-top" src="images/icono.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer id="contacto">
-        <h3>Contáctese con nosotros</h3>
-        <ul>
-            <li>
-                <h4>Déjenos su mensaje</h4>
+    <footer>
+        <h3 id="contacto">Contactate con nosotros</h3>
+        <ul class="contacto-lista">
+            <li class="contacto-item">
+                <h4>Dejanos tu mensaje</h4>
                 <form action="">
                     <div>
                         <label for="">Nombre</label>
@@ -68,19 +101,27 @@
                     <button type="submit">Enviar mensaje</button>
                 </form>
             </li>
-            <li>
-                <h4>Visítenos</h4>
+            <li class="contacto-item">
+                <h4>Visitanos en nuestro local</h4>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13102.21643161222!2d-58.4621039!3d-34.8171583!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd3bfb21ea51b%3A0x72df18f87ff452c5!2sBLOCKBUSTER%20VIDEO!5e0!3m2!1ses-419!2sar!4v1686248249311!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </li>
-            <li>
-                <h4>Investíguenos</h4>
+            <li class="contacto-item">
+                <h4>Buscanos en nuestras redes</h4>
                 <ul>
-                    <li>Facebook</li>
-                    <li>Twitter</li>
-                    <li>Instagram</li>
+                    <li>
+                        <a href="http://www.facebook.com" target="_blank"><img src="images/facebook_icon.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="http://www.twitter.com" target="_blank"><img src="images/twitter_icon.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="http://www.instagram.com" target="_blank"><img src="images/instagram_icon.png" alt=""></a>
+                    </li>
                 </ul>
             </li>
         </ul>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

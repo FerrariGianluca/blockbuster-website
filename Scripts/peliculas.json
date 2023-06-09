@@ -1,0 +1,23 @@
+[
+    {
+      "titulo": "The Shawshank Redemption",
+      "anio": 1994,
+      "director": "Frank Darabont",
+      "genero": ["Drama", "Crimen"],
+      "calificacion": 9.3
+    },
+    {
+      "titulo": "The Godfather",
+      "anio": 1972,
+      "director": "Francis Ford Coppola",
+      "genero": ["Drama", "Crimen"],
+      "calificacion": 9.2
+    },
+    {
+      "titulo": "Pulp Fiction",
+      "anio": 1994,
+      "director": "Quentin Tarantino",
+      "genero": ["Crimen", "Drama"],
+      "calificacion": 8.9
+    }
+]
